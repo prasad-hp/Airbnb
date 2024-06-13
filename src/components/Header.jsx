@@ -4,7 +4,7 @@ function Header() {
   return (
     <div>
         {/* Desktop Header */}
-        <header className='hidden sm:inline-block'>
+        <header className='hidden sm:inline-block w-full'>
             <div className='grid grid-cols-3 px-20 py-3'>
                 <a href="/">
                     <img src='../../airbnb.svg' alt='Airbnb Logo' className='hover:cursor-pointer h-auto'/>
@@ -17,7 +17,7 @@ function Header() {
                 <div className='flex items-center justify-end space-x-5'>
                     <button className='hover:bg-gray-100 rounded-full p-3 px-4 font-semibold text-gray-700 hover:cursor-pointer'>Airbnb your home</button>
                     <img src='../../globe-icon.svg' alt='Globe Icon' className='w-5 hover:cursor-pointer'/>
-                    <div className='flex items-center space-x-2 border-2 border-gray-200 rounded-full py-1 px-2'>
+                    <div className='flex items-center space-x-2 border-2 border-gray-200 rounded-full py-1 px-2 hover:shadow-md'>
                         <img src='../../menu-icon.svg' alt='Menu Icon' className='w-5 hover:cursor-pointer'/>
                         <img src='../../account-circle.svg' alt='Account Icon' className='w-9 hover:cursor-pointer'/>
                     </div>
@@ -35,7 +35,7 @@ function Header() {
             </div>
         </div>
         {/* Search bar for larger screens */}
-        <div className='hidden sm:inline-block'>
+        <div className='hidden sm:inline-block w-full'>
             <div className='flex justify-center'>
                 <div className='w-full md:w-3/4 lg:w-1/2 text-center grid grid-cols-6 justify-center border border-gray-100 bg-white rounded-full shadow-md h-16'>
                     <div className='grid grid-cols-1 grid-rows-2 justify-start col-span-2 hover:bg-gray-200 rounded-full pl-6'>
