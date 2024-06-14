@@ -2,11 +2,11 @@ import React from 'react';
 
 function Card(props) {
   return (
-    <div className='w-full'>
+    <div className='w-full hover:cursor-pointer hover:scale-105 transition duration-300'>
       <div className="flex justify-center">
         <div className='w-11/12 flex flex-col items-center align-middle justify-center'>
           <div className='relative'>
-            <img src={props.img} alt="photo" className='rounded-lg 2xl:h-60 xl:h-56 md:h-48 sm:h-60 2xl:w-60 xl:w-56 md:w-48 sm:w-60' />
+            <img src={props.img} alt="photo" className='rounded-lg 2xl:h-60 xl:h-56 md:h-48 sm:h-60 2xl:w-64 xl:w-60 md:w-52 sm:w-64' />
             <img src="" alt="" className='absolute right-3 top-2' />
           </div>
           <div className='2xl:w-60 xl:w-56 md:w-48 sm:w-60 w-full'>
