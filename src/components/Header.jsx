@@ -2,9 +2,9 @@ import React from 'react';
 
 function Header() {
   return (
-    <div>
+    <div className='fixed top-0 bg-white z-50'>
         {/* Desktop Header */}
-        <header className='hidden sm:inline-block w-full'>
+        <header className='hidden sm:inline-block w-full '>
             <div className='grid grid-cols-3 px-20 py-3'>
                 <a href="/">
                     <img src='../../airbnb.svg' alt='Airbnb Logo' className='hover:cursor-pointer h-auto'/>
@@ -38,22 +38,22 @@ function Header() {
         <div className='hidden sm:inline-block w-full'>
             <div className='flex justify-center'>
                 <div className='w-full md:w-3/4 lg:w-1/2 text-center grid grid-cols-6 justify-center border border-gray-100 bg-white rounded-full shadow-md h-16'>
-                    <div className='grid grid-cols-1 grid-rows-2 justify-start col-span-2 hover:bg-gray-200 rounded-full pl-6'>
+                    <div className='group grid grid-cols-1 grid-rows-2 justify-start col-span-2 hover:bg-gray-200 rounded-full pl-6'>
                         <label htmlFor="destinations" className='text-left pt-2 text-sm'>Where</label>
-                        <input type="text" placeholder='Search destinations' id='destinations' className='outline-none w-3/4 h-4 bg-white hover:bg-gray-200'/>
+                        <input type="text" placeholder='Search destinations' id='destinations' className='outline-none w-3/4 h-4 bg-white hover:bg-gray-200 group-hover:bg-slate-200'/>
                     </div>
-                    <div className='grid grid-cols-1 grid-rows-2 justify-start col-span-1 hover:bg-gray-200 rounded-full pl-6'>
+                    <div className={`group grid grid-cols-1 grid-rows-2 justify-start col-span-1 hover:bg-gray-200 rounded-full pl-6`}>
                         <label htmlFor="checkin" className='text-left pt-2'>Check in</label>
-                        <input type="text" placeholder='Add dates' id='checkin' className='outline-none w-3/4 h-4 bg-white hover:bg-gray-200'/>
+                        <input type="text" placeholder='Add dates' id='checkin' className='outline-none w-3/4 h-4 bg-white hover:bg-gray-200 group-hover:bg-slate-200'/>
                     </div>
-                    <div className='grid grid-cols-1 grid-rows-2 justify-start col-span-1 hover:bg-gray-200 rounded-full pl-6'>
+                    <div className='group grid grid-cols-1 grid-rows-2 justify-start col-span-1 hover:bg-gray-200 rounded-full pl-6'>
                         <label htmlFor="checkout" className='text-left pt-2'>Check out</label>
-                        <input type="text" placeholder='Add dates' id='checkout' className='outline-none w-3/4 h-4 bg-white hover:bg-gray-200'/>
+                        <input type="text" placeholder='Add dates' id='checkout' className='outline-none w-3/4 h-4 bg-white hover:bg-gray-200 group-hover:bg-slate-200'/>
                     </div>
-                    <div className='flex justify-around col-span-2 hover:bg-gray-200 rounded-full pl-6'>
-                        <div className='grid grid-cols-1 grid-rows-2 justify-start pl-4'>
+                    <div className='group flex justify-around col-span-2 hover:bg-gray-200 rounded-full pl-6'>
+                        <div className=' grid grid-cols-1 grid-rows-2 justify-start pl-4'>
                             <label htmlFor="who" className='text-left pt-2 text-sm'>Who</label>
-                            <input type="text" placeholder='Add guests' id='who' className='outline-none w-3/4 h-4 bg-white hover:bg-gray-200'/>
+                            <input type="text" placeholder='Add guests' id='who' className='outline-none w-3/4 h-4 bg-white hover:bg-gray-200 group-hover:bg-slate-200'/>
                         </div>
                         <button type='submit' className='px-2'>
                             <img src="../../search-icon.svg" alt="Search Icon" className='bg-red-500 rounded-full p-3 w-12'/>

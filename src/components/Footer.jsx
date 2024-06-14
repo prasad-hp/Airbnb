@@ -26,7 +26,7 @@ function Footer() {
                     )
                 })}
             </div>
-            <div className='flex justify-center space-x-72'>
+            <div className='md:grid-cols-3 grid grid-cols-1 content-center'>
                 <div>
                     <h2 className='font-semibold'>Support</h2>
                     <ul>
@@ -38,7 +38,7 @@ function Footer() {
                         <li>Report neighbourhood concern</li>
                     </ul>
                 </div>
-                <div>
+                <div>   
                     <h2 className='font-semibold'>Hosting</h2>
                     <ul>
                         <li>Airbnb your home</li>
