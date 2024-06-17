@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Header() {
+    const [show, setShow] = useState(false)
+
+    const transisionNavBar = ()=>{
+        if(window.scrollY > 100) {
+            setShow(true);
+        }else {
+            setShow(false)
+        }
+    }
+    useEffect(()=> {
+        window.addEventListener("scroll", transisionNavBar)
+        return () => window.removeEventListener("scroll", transisionNavBar);
+    },[])
   return (
     <div className='fixed top-0 bg-white z-50'>
         {/* Desktop Header */}
@@ -9,10 +22,17 @@ function Header() {
                 <a href="/">
                     <img src='../../airbnb.svg' alt='Airbnb Logo' className='hover:cursor-pointer h-auto'/>
                 </a>
-                <div className='flex items-center justify-center space-x-7'>
+                <div className={`flex items-center justify-center space-x-7 ${show && "hidden"}`}>
                     <button className='hover:bg-gray-100 hover:cursor-pointer rounded-full p-3 px-4 text-gray-500 font-normal hover:text-gray-700 hidden lg:inline-block'>Stays</button>
                     <button className='hover:bg-gray-100 hover:cursor-pointer rounded-full p-3 px-4 text-gray-500 font-normal hover:text-gray-700 hidden lg:inline-block'>Experiences</button>
                     <button className='hover:bg-gray-100 hover:cursor-pointer rounded-full p-3 px-4 text-gray-500 font-normal hover:text-gray-700 hidden lg:inline-block'>Online Experiences</button>
+                </div>
+                <div className={`hidden md:${show && "inline-block"}`}>
+                    <div>Anywhere</div>
+                    <div>Any week</div>
+                    <div>Add guests</div>
+                    <img src="" alt="" />
+
                 </div>
                 <div className='flex items-center justify-end space-x-5'>
                     <button className='hover:bg-gray-100 rounded-full p-3 px-4 font-semibold text-gray-700 hover:cursor-pointer'>Airbnb your home</button>
@@ -35,7 +55,7 @@ function Header() {
             </div>
         </div>
         {/* Search bar for larger screens */}
-        <div className='hidden sm:inline-block w-full'>
+        <div className={`hidden sm:inline-block w-full ${true && "sm:hidden"}`}>
             <div className='flex justify-center'>
                 <div className='w-full md:w-3/4 lg:w-1/2 text-center grid grid-cols-6 justify-center border border-gray-100 bg-white rounded-full shadow-md h-16'>
                     <div className='group grid grid-cols-1 grid-rows-2 justify-start col-span-2 hover:bg-gray-200 rounded-full pl-6'>
