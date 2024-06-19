@@ -15,10 +15,10 @@ function Header() {
         return () => window.removeEventListener("scroll", transisionNavBar);
     },[])
   return (
-    <div className='fixed top-0 bg-white z-50'>
+    <div className='fixed top-0 bg-white z-50 w-screen'>
         {/* Desktop Header */}
         <header className='hidden sm:inline-block w-full '>
-            <div className='grid grid-cols-3 px-20 py-3'>
+            <div className='grid grid-cols-3 px-20 py-3 w-full'>
                 <a href="/">
                     <img src='../../airbnb.svg' alt='Airbnb Logo' className='hover:cursor-pointer h-auto'/>
                 </a>
@@ -27,12 +27,16 @@ function Header() {
                     <button className='hover:bg-gray-100 hover:cursor-pointer rounded-full p-3 px-4 text-gray-500 font-normal hover:text-gray-700 hidden lg:inline-block'>Experiences</button>
                     <button className='hover:bg-gray-100 hover:cursor-pointer rounded-full p-3 px-4 text-gray-500 font-normal hover:text-gray-700 hidden lg:inline-block'>Online Experiences</button>
                 </div>
-                <div className={`hidden md:${show && "inline-block"}`}>
-                    <div>Anywhere</div>
-                    <div>Any week</div>
-                    <div>Add guests</div>
-                    <img src="" alt="" />
-
+                {/* Scroll Header */}
+                <div className={`hidden -300 md:flex items-center justify-center ${show && "md:inline-block"}`}>
+                    <div className='flex space-x-5 items-center justify-between border border-gray p-2 shadow-md rounded-full pl-4'>
+                        <div>Anywhere</div>
+                        <div>Any week</div>
+                        <div>Add guests</div>
+                        <div className='bg-red-500 rounded-full p-1'>
+                            <img src="../search-icon.svg" alt="search icon" />
+                        </div>
+                    </div>
                 </div>
                 <div className='flex items-center justify-end space-x-5'>
                     <button className='hover:bg-gray-100 rounded-full p-3 px-4 font-semibold text-gray-700 hover:cursor-pointer'>Airbnb your home</button>
