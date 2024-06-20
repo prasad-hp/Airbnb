@@ -6,10 +6,10 @@ function Card(props) {
       <div className="flex justify-center">
         <div className='w-11/12 flex flex-col items-center align-middle justify-center'>
           <div className='relative'>
-            <img src={props.img} alt="photo" className='rounded-lg 2xl:h-60 xl:h-56 md:h-48 sm:h-60 2xl:w-64 xl:w-60 md:w-52 sm:w-64' />
+            <img src={props.img} alt="photo" className='rounded-lg ' />
             <img src="" alt="" className='absolute right-3 top-2' />
           </div>
-          <div className='2xl:w-60 xl:w-56 md:w-48 sm:w-60 w-full'>
+          <div className='2xl:w-68 xl:w-64 md:w-56 sm:w-64 w-full'>
             <div className='pl-3 w-11/12'>
               <div className='flex justify-between'>
                 <p className='font-semibold'>{props.location}</p>

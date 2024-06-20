@@ -107,7 +107,7 @@ function Header() {
             </header>
             <div className={`${show && "mt-3 absolute top-16 transition duration-500"}`}>
                 <hr />
-                <div className={`h-16 lg:px-20 md:px-10 sm:px-5 w-screen content-center bg-white z-50 mt-3`}>
+                <div className={`h-16 lg:px-20 md:px-10 sm:px-5 w-screen content-center bg-white z-50 mt-3 hidden sm:inline-block`}>
                     <div className='flex justify-between items-center space-x-2'>
                         <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
                             <img src="../navbarIcons/local.svg" alt="Local" />
