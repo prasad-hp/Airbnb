@@ -64,7 +64,7 @@ function Header() {
             {/* Search bar for larger screens */}
             <div className={`w-full hidden sm:inline-block`}>
                 <div className={`${show && "hidden"} transition duration-300`}>
-                    <div className='flex justify-center'>
+                    <div className='flex justify-center items-center'>
                         <div className='w-full md:w-3/4 lg:w-1/2 text-center grid grid-cols-6 justify-center border border-gray-100 bg-white rounded-full shadow-md h-16'>
                             <div className='group grid grid-cols-1 grid-rows-2 justify-start col-span-2 hover:bg-gray-200 rounded-full pl-6'>
                                 <label htmlFor="destinations" className='text-left pt-2 text-sm'>Where</label>

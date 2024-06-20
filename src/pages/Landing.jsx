@@ -6,7 +6,7 @@ import NavBarMobile from '../components/NavBarMobile';
 
 function Landing() {
   return (
-    <div>
+    <div className='rounded-md sm:rounded-none'>
         <Header />
         <CardLayout />
         <NavBarMobile />
