@@ -94,18 +94,20 @@ function Header() {
             </div>
 
             {/* Mobile Header */}
-            <header className='w-full flex justify-center py-3'>
-                <div className='inline-block sm:hidden shadow-md w-11/12 rounded-full'>
-                    <div className='flex justify-start items-center rounded-full cursor-pointer'>
-                        <img src="../../search-icon-black.svg" alt="search icon" className='w-16 p-4'/>
-                        <div>
-                            <p className='font-semibold text-gray-700'>Where to?</p>
-                            <p className='text-gray-400 text-sm'>Anywhere &#8226; Any week &#8226; Add guests</p>
+            <header className='w-full py-3 inline-block sm:hidden '>
+                <div className='flex justify-center items-center'>
+                    <div className=' shadow-md w-11/12 rounded-full'>
+                        <div className='flex justify-start items-center rounded-full cursor-pointer w-full'>
+                            <img src="../../search-icon-black.svg" alt="search icon" className='w-16 p-4'/>
+                            <div>
+                                <p className='font-semibold text-gray-700'>Where to?</p>
+                                <p className='text-gray-400 text-sm'>Anywhere &#8226; Any week &#8226; Add guests</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <div className={`${show && "mt-3 absolute top-16 transition duration-500"}`}>
+            <div className={`mt-4 ${show && "mt-3 absolute top-16 transition duration-500"}`}>
                 <hr />
                 <div className={`h-16 lg:px-20 md:px-10 sm:px-5 w-screen content-center bg-white z-50 mt-3 hidden sm:inline-block`}>
                     <div className='flex justify-between items-center space-x-2'>

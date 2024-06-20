@@ -10,7 +10,7 @@ function Card(props) {
             <img src="" alt="" className='absolute right-3 top-2' />
           </div>
           <div className='2xl:w-68 xl:w-64 md:w-56 sm:w-64 w-full'>
-            <div className='pl-3 w-11/12'>
+            <div className='sm:pl-3 w-11/12'>
               <div className='flex justify-between'>
                 <p className='font-semibold'>{props.location}</p>
                 <p className='font-semibold'>&#9733;{" "}{props.star}</p>
