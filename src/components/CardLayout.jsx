@@ -27,7 +27,7 @@ function CardLayout() {
     }, []);
 
     return (
-        <div className='lg:px-20 md:px-10 sm:px-5 w-screen h-auto content-center sm:mt-48 mt-10'>
+        <div className='lg:px-20 md:px-10 sm:px-5 w-screen content-center sm:mt-48 mt-10'>
             <div className='flex justify-center'>
                 {data.length > 0 ? (
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-2">

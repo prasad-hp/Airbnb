@@ -105,6 +105,81 @@ function Header() {
                     </div>
                 </div>
             </header>
+            <div className={`${show && "mt-3 absolute top-16 transition duration-500"}`}>
+                <hr />
+                <div className={`h-16 lg:px-20 md:px-10 sm:px-5 w-screen content-center bg-white z-50 mt-3`}>
+                    <div className='flex justify-between items-center space-x-2'>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/local.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Local</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/ac_unit_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>AC Homes</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/agriculture_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Farms</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/bathtub_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Bathtub</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/cabin_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Cabin</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/directions_car_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Adventure</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/forest_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Forest</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/holiday_village_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Village</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/home_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Sweet Home</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/hot_tub_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Hottub</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/houseboat_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Boat House</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/landscape_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Mountains</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/pool_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Pools</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/rocket_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Execiting</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/shower_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Shower</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/villa_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Villa</p>
+                        </div>
+                        <div className='flex flex-col items-center hover:font-semibold hover:scale-105 transition duration-150 hover:cursor-pointer'>
+                            <img src="../navbarIcons/water_drop_24dp.svg" alt="Local" />
+                            <p className='hover:font-semibold'>Rainy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
